@@ -8,6 +8,11 @@
 
 <hr />
 <%= link_to 'Add Comment', new_item_comment_path(@item) %>
+<br />
 <%= link_to 'Edit Item', edit_department_item_path([@department, @item]) %>
+<br />
 <%= link_to 'Delete Item', [@department, @item], method: :delete %>
+<br />
 <%= link_to 'Back to Items', department_items_path(@department) %>
+<br /> 
+<%= link_to 'Home', departments_path %>
